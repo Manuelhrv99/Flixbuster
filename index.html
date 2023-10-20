@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Flixbuster</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/index.html">Flixbuster</a>
+              <button id="moveButton" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="action_button">Action</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="comedy_button">Comedy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="animation_button">Animation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" id="horror_button">Horror</a>
+                  </li>
+                </ul>
+                <form class="d-flex" onsubmit="searchMovies(event);">
+                  <input class="form-control me-2" type="search" placeholder="Search movies" aria-label="Search" id="searchInput">
+                  <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row" id="movieCards">
+            <!-- Aquí se cargarán las tarjetas de películas -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="movieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="modalOverview"></p>
+                <hr>
+                <p id="modalDate"></p>
+                <p id="modalScore"></p>
+                <img src="" id="modalPoster" class="img-fluid rounded-start" alt="">
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <a href="https://github.com/Manuelhrv99"><img src="/img/github logo.png" alt="github logo"></a>
+        <h4>Manuel Humberto Rodriguez Villegas</h4>
+        <img src="/img/Sport palace logo.png" alt="sport palace logo">
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

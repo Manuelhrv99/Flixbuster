@@ -1,0 +1,54 @@
+.navbar {
+    height: 15vh;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+.nav-item {
+    font-size: 1.5rem;
+}
+
+/* Estilo para la barra de navegación */
+.navbar-expand-lg {
+    transition: height 0.5s ease;
+}
+
+.navbar-expand-lg.expanded {
+    height: calc(100px + 35vh); /* Aumenta la altura en 100px */
+}
+
+/* Estilo para el contenedor de las tarjetas */
+#movieCards {
+    justify-content: space-between;
+}
+
+/* Estilo para las tarjetas individuales */
+.card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+#modalScore {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(192, 192, 192);
+}
+footer img {
+    margin-top: 10px;
+    max-width: 10vw;
+}
+footer a img {
+    margin-bottom: 10px;
+    max-width: 4vw;
+}
+footer h4 {
+    color: black;
+}
