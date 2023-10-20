@@ -16,7 +16,7 @@
 }
 
 .navbar-expand-lg.expanded {
-    height: calc(100px + 35vh); /* Aumenta la altura en 100px */
+    height: calc(15vh + 35vh);
 }
 
 /* Estilo para el contenedor de las tarjetas */
@@ -29,6 +29,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     cursor: pointer;
+}
+
+.modal-content {
+    text-align: center;
 }
 
 #modalScore {

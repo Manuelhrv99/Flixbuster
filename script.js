@@ -55,8 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function createMovieCard(movie) {
         const movieCard = document.createElement('div');
         movieCard.classList.add('card');
-        movieCard.classList.add('col-sm-12');
-        movieCard.classList.add('col-md-6');
+        movieCard.classList.add('col-md-12');
         movieCard.classList.add('col-lg-3');
 
         // Asignar el ID de la película como un atributo de datos
